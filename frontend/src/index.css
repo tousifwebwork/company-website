@@ -1,0 +1,11 @@
+@import "tailwindcss";   
+@plugin "daisyui/index.js";
+
+html {
+	scroll-behavior: smooth;
+}
+
+section[id] {
+	scroll-margin-top: var(--navbar-offset, 100px);
+}
+ 
