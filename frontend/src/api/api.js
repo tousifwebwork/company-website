@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = "http://localhost:3000/api" || "https://company-website-u7x3.onrender.com";
+const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 // GET all openings
 export const getOpenings = () => {
