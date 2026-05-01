@@ -2,12 +2,13 @@ const App = require("../model/model");
 
 exports.applyInternship = async (req, res) => {
   try {
-    const { name, email, message } = req.body;
+    const { name, email, message, role } = req.body;
 
     const newApp = new App({
       name,
       email,
       message,
+      role,
       resume: req.file ? req.file.path : ""
     });
 

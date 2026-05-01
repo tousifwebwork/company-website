@@ -7,6 +7,7 @@ const Card = ({ props }) => {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [file, setFile] = useState(null);
+  const [role, setRole] = useState(props.jobTitle);
 
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [success, setSuccess] = useState("");
@@ -33,6 +34,7 @@ const Card = ({ props }) => {
     formData.append("name", name);
     formData.append("email", email);
     formData.append("message", message);
+    formData.append("role", role);
     formData.append("file", file);
 
     try {
