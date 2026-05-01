@@ -5,7 +5,7 @@ import Testimonial from '../components/Testimonial'
 const About = () => {
   return (
      <>
-        <section id="about" className='mt-10 flex flex-col items-center px-4 py-4' >
+        <section id="about" className='mt-10 flex flex-col items-center px-4 py-4 w-full' >
 
            
             <style>{`
@@ -15,12 +15,12 @@ const About = () => {
                     font-family: 'Poppins', sans-serif;
                 }
             `}</style>
-            <section className="flex flex-col md:flex-row items-center justify-center gap-10 max-md:px-4">
-                <div className="relative shadow-2xl shadow-indigo-600/40 rounded-2xl overflow-hidden shrink-0">
-                    <img className="max-w-md w-full object-cover rounded-2xl"
+            <section className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 w-full max-w-6xl">
+                <div className="relative shadow-2xl shadow-indigo-600/40 rounded-2xl overflow-hidden shrink-0 w-full max-w-md">
+                    <img className="w-full object-cover rounded-2xl"
                         src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?q=80&w=451&h=451&auto=format&fit=crop"
                         alt="" />
-                    <div className="flex items-center gap-1 max-w-72 absolute bottom-8 left-8 bg-white p-4 rounded-xl">
+                    <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 max-w-72 absolute bottom-4 left-4 right-4 sm:bottom-8 sm:left-8 sm:right-auto bg-white p-4 rounded-xl">
                         <div className="flex -space-x-4 shrink-0">
                             <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=200" alt="image"
                                 className="size-9 rounded-full border-[3px] border-white hover:-translate-y-1 transition z-1" />
@@ -37,7 +37,7 @@ const About = () => {
                         <p className="text-sm font-medium text-slate-800">Join our developer community</p>
                     </div>
                 </div>
-                <div className="text-sm text-slate-600 max-w-lg">
+                <div className="text-sm text-slate-600 max-w-lg text-center md:text-left">
                     <h1 className="text-xl uppercase font-semibold text-slate-700">What we do?</h1>
                     <div className="w-24 h-[3px] rounded-full bg-gradient-to-r from-indigo-600 to-[#DDD9FF]"></div>
                     <p className="mt-8">
@@ -52,7 +52,7 @@ From web applications and mobile platforms to cloud-native systems, our team bui
 Whether you're a startup or an enterprise, we focus on clean architecture, seamless user experience, and technology that grows with your business.
 </p>
 
-<a href="#" className="flex items-center w-max gap-2 mt-8 hover:-translate-y-0.5 transition bg-gradient-to-r from-indigo-600 to-[#8A7DFF] py-3 px-8 rounded-full text-white">
+<a href="#" className="flex items-center justify-center w-full sm:w-max gap-2 mt-8 hover:-translate-y-0.5 transition bg-gradient-to-r from-indigo-600 to-[#8A7DFF] py-3 px-8 rounded-full text-white mx-auto md:mx-0">
     <span>Explore Services</span>
     <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path

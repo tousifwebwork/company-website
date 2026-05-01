@@ -1,6 +1,18 @@
 @import "tailwindcss";   
 @plugin "daisyui/index.js";
 
+html,
+body,
+#root {
+	width: 100%;
+	min-height: 100%;
+	overflow-x: hidden;
+}
+
+body {
+	margin: 0;
+}
+
 html {
 	scroll-behavior: smooth;
 }

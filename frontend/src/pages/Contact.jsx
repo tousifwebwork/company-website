@@ -4,8 +4,8 @@ import Footer from '../components/Footer'
 const Contact = () => {
   return (
     <>
-        <section id='contact' className='flex flex-col items-center  px-4 py-4' >
-             <form className="bg-white text-gray-500 max-w-96 mx-4 md:p-6 p-4 text-left text-sm rounded-lg shadow-lg">
+           <section id='contact' className='flex flex-col items-center px-4 py-4 w-full' >
+             <form className="bg-white text-gray-500 w-full max-w-md mx-4 md:p-6 p-4 text-left text-sm rounded-lg shadow-lg">
             <h2 className="text-2xl font-semibold mb-6 text-center text-gray-800">Need Help? Contact Us</h2>
             <label htmlFor="email">Email</label>
             <input id="email" className="w-full border mt-1 border-gray-500/30 outline-none rounded p-2" type="email" placeholder="Enter your email" required />

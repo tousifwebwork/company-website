@@ -61,7 +61,7 @@ const Card = ({ props }) => {
   };
 
   return (
-    <div className="card bg-base-100 w-96 shadow-sm">
+  <div className="card bg-base-100 w-full max-w-sm shadow-sm mx-auto">
 
       <figure>
         <img src={props.imageUrl} alt={props.jobTitle} />
@@ -84,7 +84,7 @@ const Card = ({ props }) => {
 
           {/* MODAL */}
           <dialog id="my_modal" className="modal">
-            <div className="modal-box w-fit">
+            <div className="modal-box w-[calc(100vw-2rem)] max-w-md">
 
               <button
                 className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2"

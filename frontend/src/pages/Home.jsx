@@ -9,11 +9,11 @@ import About from '../pages/About'
 const Home = () => {
   return (
     <>
-      <section  id="home" className="w-full flex flex-col items-center bg-linear-to-b from-[#D9D9FF] to-[#F8F3F9] py-4">
+      <section  id="home" className="w-full flex flex-col items-center bg-linear-to-b from-[#D9D9FF] to-[#F8F3F9] py-4 overflow-x-hidden">
         <Navbar />
 
         {/* MAIN WRAPPER */}
-        <div className="w-full px-4 md:px-10 lg:px-20 flex flex-col items-center">
+        <div className="w-full px-4 md:px-10 lg:px-20 flex flex-col items-center max-w-7xl">
 
           {/* TOP BADGE */}
           <div className="flex flex-wrap items-center justify-center gap-2 pl-2 pr-4 py-1.5 mt-30 rounded-full bg-white/50 border border-white">
@@ -39,7 +39,7 @@ const Home = () => {
           </p>
 
           {/* BUTTONS */}
-          <div className="flex gap-3 mt-10">
+          <div className="flex flex-col sm:flex-row gap-3 mt-10 w-full sm:w-auto justify-center">
             <button className="bg-violet-600 hover:bg-violet-700 text-white text-xs md:text-sm px-6 py-3 rounded-lg transition cursor-pointer">
               <a href="#carrier">Get Started Now</a>
             </button>
@@ -52,7 +52,7 @@ const Home = () => {
           <div className="w-full h-0.5 mt-10 bg-linear-to-r from-white/10 via-violet-600 to-white/10"></div>
 
           {/* STATS (FULL WIDTH GRID) */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 py-18 w-full">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8 py-12 md:py-18 w-full">
             <div className="text-center">
               <h2 className="font-medium text-2xl md:text-3xl text-gray-800">
                 20+
@@ -92,10 +92,12 @@ const Home = () => {
         </div>
 
         {/* OTHER SECTIONS */}
-        <Services />
-        <Carrier />
-        <About />
-        <Contact />
+        <div className="w-full px-4 md:px-10 lg:px-20">
+          <Services />
+          <Carrier />
+          <About />
+          <Contact />
+        </div>
       </section>
 
       <Footer />
