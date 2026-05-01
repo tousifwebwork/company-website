@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const BASE_URL = import.meta.env.VITE_BASE_URL;
+const BASE_URL = import.meta.env.DEV ? "http://localhost:3000/api" : "https://company-website-u7x3.onrender.com/api";  
 
 // GET all openings
 export const getOpenings = () => {
@@ -14,4 +14,9 @@ export const createApplication = (data) => {
       "Content-Type": "multipart/form-data"
     }
   });
+};
+
+
+export const contact = (data) => {
+  return axios.post(`${BASE_URL}/contact`, data);
 };
