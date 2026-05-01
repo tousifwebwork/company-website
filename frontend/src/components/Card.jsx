@@ -20,7 +20,7 @@ const Card = ({ props }) => {
   };
 
   const handleCloseModal = () => {
-    document.getElementById("my_modal").close();
+    document.getElementById("my_modal")?.close();
   };
 
   const handleSubmit = async (e) => {
@@ -76,7 +76,7 @@ const Card = ({ props }) => {
           <button
             className="btn btn-primary"
             onClick={() =>
-              document.getElementById("my_modal").showModal()
+              document.getElementById("my_modal")?.showModal?.()
             }
           >
             Apply Now
